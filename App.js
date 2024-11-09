@@ -5,6 +5,7 @@
 // 4.npx parcel index.html
 // 5.make the type: "module"
 // 6.remove the main in package.json (Entry point)
+// npx parecl build index.html
 
 
 
