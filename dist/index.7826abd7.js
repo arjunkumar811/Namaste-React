@@ -2951,6 +2951,14 @@ var prevRefreshSig = window.$RefreshSig$;
 $parcel$ReactRefreshHelpers$c1db.prelude(module);
 
 try {
+// steps to intial a app 
+// 1.npm init -y
+// 2.npm install -D parcel
+// 3.npm install react react-dom
+// 4.npx parcel index.html
+// 5.make the type: "module"
+// 6.remove the main in package.json (Entry point)
+// npx parecl build index.html
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);

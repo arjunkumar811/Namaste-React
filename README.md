@@ -10,8 +10,11 @@
 https://legacy.reactjs.org/docs/cdn-links.html
 
 
-## parcel (Best)
+## parcel (Beast)
 https://parceljs.org/ 
+
+## babel (SuperMan)
+https://babeljs.io/docs/
 
 ## browserlist (to optimize the app)
 https://browserslist.dev/?q=bGFzdCAyIHZlcnNpb25z
