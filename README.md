@@ -19,3 +19,8 @@ https://browserslist.dev/?q=bGFzdCAyIHZlcnNpb25z
 # References:
 - https://beta.reactjs.org/apis/react/createElement
 - https://www.youtube.com/watch?v=IrHmpdORLu8
+
+# Extentions 
+1. Better Comments
+2. Bracket Pair Colorization Toggler
+3. ESLint
