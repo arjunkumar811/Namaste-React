@@ -1,4 +1,4 @@
-# Namahte react
+# Namashte react! 🚀⚡
 
 # References:
 - https://beta.reactjs.org/apis/react/createElement
