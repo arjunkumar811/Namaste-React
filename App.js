@@ -1,69 +1,52 @@
-// steps to intial a app 
-// 1.npm init -y
-// 2.npm install -D parcel
-// 3.npm install react react-dom
-// 4.npx parcel index.html
-// 5.make the type: "module"
-// 6.remove the main in package.json (Entry point)
-// npx parecl build index.html
+// # Namaste React 🚀
 
+/*
+# Parcel
+- Dev Build
+- Local Server
+- HMR = Hot Module Replacement
+- File Watching Algorithm - written in C++
+- Caching - Faster Builds
+- Image Optimization
+- Minification
+- Bundling
+- Compress
+- Consistent Hashing
+- Code Splitting
+- Differential Bundling - support older browsers
+- Diagnostic
+- Error Handling
+- HTTPs
+- Tree Shaking - remove unused code
+- Different dev and prod bundles
+*/
 
 
 import React from "react";
 import ReactDOM from "react-dom/client";
 
-{/* <div id="parent">
-    
-    <div id="child">
-        <h1> hi there h1 </h1>
-        <h2> hi there h2 </h2>
-    </div>
+const child1 = React.createElement("div", { id: "child1" }, [
+  React.createElement("h1", {}, "This is Namaste React 🚀"),
+  React.createElement("h2", {}, "by Akshay Saini"),
+]);
 
-    <div id="child">
-        <h1> hi there h1 </h1>
-        <h2> hi there h2 </h2>
-    </div>
+const child2 = React.createElement("div", { id: "child2" }, [
+  React.createElement("h1", {}, "I am an h1 tag"),
+  React.createElement("h2", {}, "I am an h2 tag"),
+]);
 
-</div> */}
-
-
-///////////////////////////////////////////////
 const parent = React.createElement(
-    "div",
-    { id: "parent" },
-    React.createElement(
-        "div",
-        { id: "child" },
-        [
-            React.createElement("h1", null, "hi there"),
-            React.createElement("h2", null, "hi there")
-        ],
-        React.createElement(
-            "div",
-            { id: "child2" },
-            [
-                React.createElement("h1", null, "h1 there"),
-                React.createElement("h2", null, "hi there")
-            ]
-        )
-    )
+  "div",
+  {
+    id: "parent"
+  },
+  [child1, child2]
 );
 
+// console.log(parent);  // object
+
+// create root using createRoot
 const root = ReactDOM.createRoot(document.getElementById("root"));
+
+// passing react element inside root
 root.render(parent);
-
-    
-
-
-   
-
-
-
-
-// const name1 = React.createElement("h1",
-//      { id: "heading" },
-//       "hello world");
-
-// const root = ReactDOM.createRoot(document.getElementById ("root"));
-
-// root.render(name1);
