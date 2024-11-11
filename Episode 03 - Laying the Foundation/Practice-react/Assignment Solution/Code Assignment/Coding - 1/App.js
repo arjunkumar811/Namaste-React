@@ -27,7 +27,7 @@ root.render(header); */
 
 //Q3 - Create a functional component of the same with JSX
 
-/* const header = () => (
+/* const Header = () => (
     <div>
     <h1>hi there 1</h1>
     <h2>hi there 2</h2>
@@ -36,8 +36,18 @@ root.render(header); */
 );
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(<header/>); */
+root.render(<Header/>); */
 
 
+// Q4): Pass attribute into the tag in JSX
 
+const Header = () => (
+    <div style={{background: "red"}}>
+        <h1 id="h1">hi there 1</h1>
+        <h2 id="h2">hi there 2</h2>
+        <h3 id="h3">hi there 3</h3>
+    </div>
+)
 
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(<Header/>);
