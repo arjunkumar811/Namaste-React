@@ -16,7 +16,7 @@ root.render(header); */
 
 // Q2): Create the same element using JSX
 
-/* const header = 
+/* const header = (
 <div ClassName: "title">
 <h1>hi there 1 </h1>
 <h2>hi there 2 </h2>
@@ -36,5 +36,8 @@ root.render(header); */
 );
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(header); */
+root.render(<header/>); */
+
+
+
 
