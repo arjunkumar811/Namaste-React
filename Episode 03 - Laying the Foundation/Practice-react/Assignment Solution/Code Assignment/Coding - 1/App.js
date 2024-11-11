@@ -17,11 +17,24 @@ root.render(header); */
 // Q2): Create the same element using JSX
 
 /* const header = 
-<div>
+<div ClassName: "title">
 <h1>hi there 1 </h1>
 <h2>hi there 2 </h2>
 <h3>hi there 3 </h3>
 </div>
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(header); */
+
+//Q3 - Create a functional component of the same with JSX
+
+/* const header = () => (
+    <div>
+    <h1>hi there 1</h1>
+    <h2>hi there 2</h2>
+    <h3>hi there 3</h3>
+    </div>
+);
+
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(header); */
 
