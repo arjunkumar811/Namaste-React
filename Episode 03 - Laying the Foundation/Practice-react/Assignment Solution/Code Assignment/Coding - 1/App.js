@@ -68,7 +68,7 @@ root.render(<Header/>); */
 
 // Q5): Composition of Component (Add a component inside another)
 
-const App = () => (
+/* const App = () => (
 <>
 <div style={{background: "yellow"}}>
  <Header1/ >
@@ -90,6 +90,31 @@ const Header2 = () => (
 
 const Header3 = () => (
     <h1>iam H3 tag</h1>
+);
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(<App/>) */
+
+// Q6): {TitleComponent} vs {<TitleComponent/>} vs {<TitleComponent></TitleComponent>} in JSX.
+
+const element = <h1 style={{color: "red"}}>This a React element</h1>
+
+
+const AnotherComponent = () => (
+<h1 style={{color: "yellow"}}>Hi iam AnotherComponent </h1>
+);
+
+
+const App = () => (
+    <>
+    <div style={{background: "lightblue"}}>
+    {element}
+    {<AnotherComponent />}
+    {AnotherComponent()}
+    <AnotherComponent/>
+  <AnotherComponent></AnotherComponent>
+  </div>  
+    </>
 );
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
